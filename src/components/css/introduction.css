@@ -1,19 +1,39 @@
 .main-div{
     width:100vw;
-    animation:colours 3600s linear infinite;
+    animation:colours 120s linear infinite;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: system-ui;
+    background-image:url("../images/developer_laptop_400px_height.png");
+    background-size: cover;
+    
 }
-@keyframes colours{
-    25%{background:linear-gradient(to left,pink,red,blue,yellow)}
-    50%{background:linear-gradient(to left,red,blue,yellow,pink)}
-    75%{background:linear-gradient(to left,blue,yellow,red,pink)}
-    100%{background: linear-gradient(to left,yellow,blue,red,pink)}
+.hello{
+    font-size: 5rem;
+    color:black;
+    text-align: center;
+}
+.txt{
+    font-size: 3rem;
+    color:black;
+    padding: 10px;
+    overflow: hidden;
 }
 .intro-div{
-    border:1px solid white;
     border-radius: 10px;
 }
 .image{
     width:30vw;
     border-radius: 10px;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+@media only screen and (max-width:780px){
+    .txt{
+        font-size:0.9rem;
+    }
+    .hello{
+        font-size:1.2rem ;
+    }
 }

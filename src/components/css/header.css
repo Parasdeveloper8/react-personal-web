@@ -6,6 +6,7 @@ header{
     font-family: system-ui;
     animation:colour 60s linear infinite;
     background-color: black;
+    border:5px dotted white;
 }
 @keyframes colour {
    5%{border:5px dotted white;color:white}
