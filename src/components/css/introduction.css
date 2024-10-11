@@ -29,11 +29,19 @@
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
-@media only screen and (max-width:780px){
+@media only screen and (max-width:400px){
     .txt{
         font-size:0.9rem;
     }
     .hello{
         font-size:1.2rem ;
+    }
+}
+@media only screen and (max-width:780px){
+    .txt{
+        font-size:1.5rem;
+    }
+    .hello{
+        font-size:2.5rem ;
     }
 }

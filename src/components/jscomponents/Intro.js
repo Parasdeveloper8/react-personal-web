@@ -15,15 +15,17 @@ export default function Intro() {
         clearInterval(typingInterval); // Clear interval when message is fully typed
       }
     };
-
+    window.AOS.init();
     const typingInterval = setInterval(typeEffect, 100); // Adjust typing speed here
 
     return () => clearInterval(typingInterval); // Cleanup the interval on component unmount
-  }, []); // Empty dependency array ensures this runs only once when component mounts
+  }, []); 
 
   return (
     <div className="main-div">
-      <div className="intro-div">
+      <div className="intro-div" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <p className="hello">Hello,I'm Paras</p>
         <p className="txt">{message}</p>
       </div>

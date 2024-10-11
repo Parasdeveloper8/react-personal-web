@@ -1,0 +1,50 @@
+.skill {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap; /* Prevent text wrapping */
+    width: 100vw; /* Full width of the viewport */
+    overflow: hidden; /* Hide overflow to prevent layout shift */ /* Allow absolute positioning for child elements */
+}
+
+.skill > div {/* Font size for the text */
+     /* Position for animation */
+    animation: key 12s linear infinite; /* Linear animation for smoothness */
+}
+.skill-animation-div{
+    display:flex;
+    flex-direction:row;
+    font-family:system-ui;
+}
+@keyframes key {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the right */
+    }
+}
+.skillheading{
+    font-size:3rem;
+    font-family:system-ui;
+    text-align:center;
+}
+.descrip{
+    font-size:1rem;
+    text-align:center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+@media only screen and (max-width:780px){
+    .skill > div{
+        animation:none;
+    }
+    .skill-animation-div{
+        display:flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .skillheading{
+        font-size: 1.5rem;
+    }
+}
