@@ -9,6 +9,22 @@
     width:100vw;
     box-sizing: border-box;
 }
+.admin{
+        color:white;
+        font-size:1.5rem;
+        font-family: system-ui;
+        background: linear-gradient(to right,red,rgb(255, 25, 25),rgb(255, 37, 37));
+        width:60vw;
+        border-radius: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        box-shadow: 0 0 10px silver;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        margin-top: 5vh;
+}
 .npm{
     color:white;
     font-size:1.5rem;
@@ -21,9 +37,18 @@
     margin-left: 20vw;
     margin-right: 20vw;
     box-shadow: 0 0 10px silver;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.lnkp > a{
+    text-decoration: none;
+    color:black;
+    &:hover{
+       text-decoration: underline black;
+    }
 }
 @media only screen and (max-width:780px){
-    .npm{
+    .npm,.admin{
         width:100vw;
         margin-left:5vw;
         margin-right:5vw;
