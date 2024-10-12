@@ -4,7 +4,7 @@ import "../css/skillcomp.css";
 export default function SKill(){
     return(
         <>
-        <p className="skillheading">MY SKILLS</p>
+        <p className="skillheading" data-aos="flip-right">MY SKILLS</p>
         <div className="skill">
         <div className="skill-animation-div">
             <div style={{boxSizing:"border-box",backgroundColor:"black",color:"white",borderRadius:"5px",boxShadow:"0 0 10px black"}}>

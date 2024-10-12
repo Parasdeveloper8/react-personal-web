@@ -1,0 +1,35 @@
+.aboutme-heading{
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+    font-family: system-ui;
+}
+.main-divofproject{
+    background-color: black;
+    width:100vw;
+    box-sizing: border-box;
+}
+.npm{
+    color:white;
+    font-size:1.5rem;
+    font-family: system-ui;
+    background: linear-gradient(to right,purple,rgb(130, 17, 130),rgb(130, 32, 130));
+    width:60vw;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    box-shadow: 0 0 10px silver;
+}
+@media only screen and (max-width:780px){
+    .npm{
+        width:100vw;
+        margin-left:5vw;
+        margin-right:5vw;
+        font-size: 1rem;
+    }
+    .aboutme-heading{
+        font-size: 1.5rem;
+    }
+}
