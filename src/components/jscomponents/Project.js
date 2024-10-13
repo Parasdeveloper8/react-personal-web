@@ -17,6 +17,8 @@ export default function Project(){
             <p>Admin Panel</p>
             <img src={projectimage} alt="admin-panel" height="200px"/>
         </div>
+        <p style={{fontSize:"2rem",color:"silver",textAlign:"center",fontFamily:"system-ui"}}>You can see more projects on my github account</p>
+        <p className="gthblnk">Github Link:<a href="https://github.com/Parasdeveloper8" target="_blank">Visit github</a></p>
         </div>
     )
 }

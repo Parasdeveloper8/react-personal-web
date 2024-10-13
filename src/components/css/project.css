@@ -58,3 +58,17 @@
         font-size: 1.5rem;
     }
 }
+.gthblnk{
+    color:silver;
+    font-family: system-ui;
+    text-align: center;
+    font-size: 2em;
+    &>a{
+        font-family: system-ui;
+        text-decoration: none;
+        color:red;
+        &:hover{
+            text-decoration: underline red;
+        }
+    }
+}
